@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts: Bebas Neue and Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-bebas {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .font-roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-[#FFFBF0] py-20 px-4 md:px-32">
+        <!--nav start-->
+        <nav>
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+
+                    <div class="flex items-center">
+                        <img src="icons/logo.png" alt="Penguin Fashion Logo" class="h-8 w-auto">
+                        
+                    </div>
+                        <a href="#" class="text-gray-700 hover:text-gray-900">Home</a>
+                        <a href="#" class="text-gray-700 hover:text-gray-900">Product</a>
+                        <a href="#" class="text-gray-700 hover:text-gray-900">About us</a>
+                        <a href="#" class="text-gray-700 hover:text-gray-900">Contact us</a>
+                    </div>
+                    <div class="md:hidden">
+                        <button class="text-gray-800 focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--banner start-->
+
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="space-y-3">
+                <h1 class="text-7xl uppercase front-bebas"><span class="text-orange-400">Be the Penguins</span> <br>
+                    <span class="text-stone-800">of Winter</span> </h1>
+                <p>Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry.</p>
+                <button
+                    class="bg-green-300 py-4 px-8 rounded-xl font-medium text-white bg-gradient-to-r from-[#A4BC46] to-[#85A019] ">Buy
+                    Now</button>
+
+            </div>
+
+            <div>
+                <img src="images/model.png" alt="">
+
+            </div>
+
+
+        </div>
+    </header>
+
+        <main class="max-w-7xl mx-auto">
+            <!-- jacket card-->
+            <section class="my-12">
+                <h3 class="text-5xl uppercase text-[#263958]">Woman Jacket</h3>
+
+                <!--card start-->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 font-roboto">
+                    <!--card 1-->
+                    <div class="p-5 space-y-4 drop-shadow-lg rounded-3xl">
+
+                        <img class="rounded-3xl p-5 bg-[#F1F1F1]" src="images/jacket-1.png" alt="">
+
+                        <h4 class="text-xl text-[#263958]">Winter Jacket</h4>
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-[#FABE4C] text-4xl">$150</h2>
+                            <button
+                                class="bg-green-300 py-4 px-8 rounded-xl font-medium text-white bg-gradient-to-r from-[#A4BC46] to-[#85A019] ">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                    <div class="p-5 space-y-4 drop-shadow-lg rounded-3xl">
+                        <img class="rounded-3xl p-5 bg-[#F1F1F1]" src="images/jacket-2.png" alt="">
+                        <h4 class="text-xl text-[#263958]">Winter Jacket</h4>
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-[#FABE4C] text-4xl">$150</h2>
+                            <button
+                                class="bg-green-300 py-4 px-8 rounded-xl font-medium text-white bg-gradient-to-r from-[#A4BC46] to-[#85A019] ">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                    <div class="p-5 space-y-4 drop-shadow-lg rounded-3xl">
+                        <img class="rounded-3xl p-5 bg-[#F1F1F1]" src="images/jacket-3.png" alt="">
+                        <h4 class="text-xl text-[#263958]">Winter Jacket</h4>
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-[#FABE4C] text-4xl">$150</h2>
+                            <button
+                                class="bg-green-300 py-4 px-8 rounded-xl font-medium text-white bg-gradient-to-r from-[#A4BC46] to-[#85A019] ">Add
+                                to Cart</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- mens jacket card-->
+            <section class="my-12">
+                <h3 class="text-5xl uppercase text-[#263958]">Mens Jacket</h3>
+
+                <!--card start-->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 font-roboto">
+                    <!--card 1-->
+                    <div class="p-5 space-y-4 drop-shadow-lg rounded-3xl">
+
+                        <img class="rounded-3xl p-5 bg-[#F1F1F1]" src="images/jacket-4.png" alt="">
+
+                        <h4 class="text-xl text-[#263958]">Winter Jacket</h4>
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-[#FABE4C] text-4xl">$150</h2>
+                            <button
+                                class="bg-green-300 py-4 px-8 rounded-xl font-medium text-white bg-gradient-to-r from-[#A4BC46] to-[#85A019] ">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                    <div class="p-5 space-y-4 drop-shadow-lg rounded-3xl">
+                        <img class="rounded-3xl p-5 bg-[#F1F1F1]" src="images/jacket-5.png" alt="">
+                        <h4 class="text-xl text-[#263958]">Winter Jacket</h4>
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-[#FABE4C] text-4xl">$150</h2>
+                            <button
+                                class="bg-green-300 py-4 px-8 rounded-xl font-medium text-white bg-gradient-to-r from-[#A4BC46] to-[#85A019] ">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                    <div class="p-5 space-y-4 drop-shadow-lg rounded-3xl">
+                        <img class="rounded-3xl p-5 bg-[#F1F1F1]" src="images/jacket-6.png" alt="">
+                        <h4 class="text-xl text-[#263958]">Winter Jacket</h4>
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-[#FABE4C] text-4xl">$150</h2>
+                            <button
+                                class="bg-green-300 py-4 px-8 rounded-xl font-medium text-white bg-gradient-to-r from-[#A4BC46] to-[#85A019] ">Add
+                                to Cart</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- footer start-->
+            <section class="py-12 bg-white">
+                <div class="flex max-w-6xl space-x-8 mx-auto px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
+                        <!-- First Card -->
+                        <div class="text-center">
+                            <h2 class="text-2xl font-bold text-gray-800">Find the Perfect Fit</h2>
+                            <p class="mt-4 text-gray-600">Everybody is different, which is why we offer styles for every body.</p>
+                        </div>
+                        <!-- Second Card -->
+                        <div class="text-center">
+                            <h2 class="text-2xl font-bold text-gray-800">Free Exchanges</h2>
+                            <p class="mt-4 text-gray-600">One of the many reasons you can shop with peace of mind.</p>
+                        </div>
+                        <!-- Third Card -->
+                        <div class="text-center">
+                            <h2 class="text-2xl font-bold text-gray-800">Contact Our Seller</h2>
+                            <p class="mt-4 text-gray-600">They are here to help you. That's quite literally what we pay them for.</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center mt-8">
+                        <img src="images/shopping.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+</body>
+
+</html>
