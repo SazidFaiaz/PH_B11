@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bracblue: '#00205B',
+            bracorange: '#FF6A13',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white font-sans overflow-x-auto overflow-y-auto">
+  <div class="min-h-screen w-full flex flex-col">
+    <div class="grid grid-cols-12 gap-6 p-6 min-w-[1024px]">
+
+      <!-- Sidebar -->
+      <div class="col-span-2 flex flex-col items-center space-y-6">
+        <!-- Profile Icon -->
+        <div class="w-20 h-20 bg-bracorange rounded-full flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5.121 17.804A13.937 13.937 0 0112 15c2.364 0 4.575.586 6.5 1.617M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+        </div>
+        <!-- Admin Info -->
+        <div class="text-center">
+          <h2 class="text-lg font-bold">ADMIN</h2>
+          <p class="text-sm text-gray-300">Email</p>
+          <p class="text-sm text-gray-300">Admin ID</p>
+        </div>
+        <!-- Pending Users -->
+        <div class="bg-zinc-900 p-4 rounded-md w-full text-left">
+          <h3 class="text-bracorange font-semibold mb-2">Current <span class="text-white">Pending</span> Users</h3>
+          <ul class="list-decimal list-inside space-y-1">
+            <li>User_1</li>
+            <li>User_2</li>
+            <li>User_3</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Middle Column -->
+      <div class="col-span-5 flex flex-col justify-between space-y-6">
+        <!-- Add Special Users -->
+        <div class="bg-zinc-900 p-6 rounded-md shadow-lg">
+          <h3 class="text-white font-semibold mb-4 text-lg">Add <span class="text-blue-400">Special</span> Users</h3>
+          <input type="text" placeholder="Assign a Unique ID"
+            class="w-full px-4 py-2 mb-4 rounded-md text-black focus:outline-none" />
+          <button class="bg-white text-black font-bold py-2 w-full rounded-full">ADD</button>
+        </div>
+
+        <!-- Remove/Block Users -->
+        <div class="bg-zinc-900 p-6 rounded-md shadow-lg">
+          <h3 class="text-bracorange font-semibold mb-4 text-lg">Remove/Block Users</h3>
+          <label class="block text-bracorange text-sm mb-1">Unique ID</label>
+          <input type="text" class="w-full px-4 py-2 mb-4 rounded-md text-black focus:outline-none" />
+          <label class="block text-bracorange text-sm mb-1">Associated Institution</label>
+          <input type="text" class="w-full px-4 py-2 mb-4 rounded-md text-black focus:outline-none" />
+          <button class="bg-bracorange text-white font-bold py-2 w-full rounded-md">Remove User</button>
+        </div>
+      </div>
+
+      <!-- Add Special Forces -->
+      <div class="col-span-5 bg-zinc-900 p-6 rounded-md shadow-lg flex flex-col justify-start">
+        <h3 class="text-white font-semibold mb-6 text-lg">Add <span class="text-bracorange">Special Forces</span></h3>
+        <div class="space-y-6">
+          <div class="flex justify-between items-center">
+            <span class="text-white text-base">Police</span>
+            <button class="bg-pink-300 text-black px-4 py-1 rounded-full font-semibold">Select</button>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="text-white text-base">RAB</span>
+            <button class="bg-pink-300 text-black px-4 py-1 rounded-full font-semibold">Select</button>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="text-white text-base">Army</span>
+            <button class="bg-pink-300 text-black px-4 py-1 rounded-full font-semibold">Select</button>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="text-white text-base">Medical team</span>
+            <button class="bg-pink-300 text-black px-4 py-1 rounded-full font-semibold">Select</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

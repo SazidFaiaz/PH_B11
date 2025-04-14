@@ -24,6 +24,7 @@ variable types
     * 18. typedarray - new Uint8Array(10)
     * 19. promise - new Promise((resolve, reject) => {})
 */
+// 
 
 var x = 10; // global scope
 let y = 20; // block scope  
